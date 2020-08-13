@@ -38,7 +38,7 @@
             this.chkEstado = new System.Windows.Forms.CheckBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.mtxtCarnet = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,8 +48,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Enabled = false;
             this.dataGridView1.Location = new System.Drawing.Point(9, 226);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(547, 205);
             this.dataGridView1.TabIndex = 1;
@@ -122,6 +123,7 @@
             this.btnAgregar.TabIndex = 9;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // label2
             // 
@@ -133,20 +135,20 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Carnet";
             // 
-            // maskedTextBox1
+            // mtxtCarnet
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(110, 81);
-            this.maskedTextBox1.Mask = "00-000000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(148, 23);
-            this.maskedTextBox1.TabIndex = 10;
+            this.mtxtCarnet.Location = new System.Drawing.Point(110, 81);
+            this.mtxtCarnet.Mask = "00-000000";
+            this.mtxtCarnet.Name = "mtxtCarnet";
+            this.mtxtCarnet.Size = new System.Drawing.Size(148, 23);
+            this.mtxtCarnet.TabIndex = 10;
             // 
             // frmAgregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(569, 437);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.mtxtCarnet);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.chkEstado);
             this.Controls.Add(this.txtAñosLaborados);
@@ -159,7 +161,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAgregar";
             this.Text = "frmAgregar";
             this.Load += new System.EventHandler(this.frmAgregar_Load);
@@ -180,6 +182,6 @@
         private System.Windows.Forms.CheckBox chkEstado;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox mtxtCarnet;
     }
 }
