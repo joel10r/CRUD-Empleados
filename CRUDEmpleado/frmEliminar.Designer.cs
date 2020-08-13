@@ -44,7 +44,9 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(9, 226);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(547, 205);
             this.dataGridView1.TabIndex = 2;
             // 
@@ -53,9 +55,10 @@
             this.btnEliminar.Location = new System.Drawing.Point(431, 189);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(125, 30);
-            this.btnEliminar.TabIndex = 10;
+            this.btnEliminar.TabIndex = 2;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // label2
             // 
@@ -70,19 +73,20 @@
             // mxtCarnet
             // 
             this.mxtCarnet.Location = new System.Drawing.Point(234, 59);
-            this.mxtCarnet.Mask = "00-00000";
+            this.mxtCarnet.Mask = "00-000000";
             this.mxtCarnet.Name = "mxtCarnet";
             this.mxtCarnet.Size = new System.Drawing.Size(110, 23);
-            this.mxtCarnet.TabIndex = 12;
+            this.mxtCarnet.TabIndex = 0;
             // 
             // btnBuscar
             // 
             this.btnBuscar.Location = new System.Drawing.Point(234, 100);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(110, 25);
-            this.btnBuscar.TabIndex = 10;
+            this.btnBuscar.TabIndex = 1;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // frmEliminar
             // 
@@ -96,7 +100,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmEliminar";
             this.Text = "frmEliminar";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

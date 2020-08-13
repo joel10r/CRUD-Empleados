@@ -53,7 +53,7 @@
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(547, 205);
-            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.TabIndex = 6;
             // 
             // label1
             // 
@@ -89,21 +89,21 @@
             this.txtNombre.Location = new System.Drawing.Point(110, 36);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(148, 23);
-            this.txtNombre.TabIndex = 7;
+            this.txtNombre.TabIndex = 0;
             // 
             // txtSalario
             // 
             this.txtSalario.Location = new System.Drawing.Point(398, 83);
             this.txtSalario.Name = "txtSalario";
             this.txtSalario.Size = new System.Drawing.Size(148, 23);
-            this.txtSalario.TabIndex = 7;
+            this.txtSalario.TabIndex = 3;
             // 
             // txtAñosLaborados
             // 
             this.txtAñosLaborados.Location = new System.Drawing.Point(398, 34);
             this.txtAñosLaborados.Name = "txtAñosLaborados";
             this.txtAñosLaborados.Size = new System.Drawing.Size(148, 23);
-            this.txtAñosLaborados.TabIndex = 7;
+            this.txtAñosLaborados.TabIndex = 1;
             // 
             // chkEstado
             // 
@@ -111,7 +111,7 @@
             this.chkEstado.Location = new System.Drawing.Point(110, 129);
             this.chkEstado.Name = "chkEstado";
             this.chkEstado.Size = new System.Drawing.Size(69, 22);
-            this.chkEstado.TabIndex = 8;
+            this.chkEstado.TabIndex = 4;
             this.chkEstado.Text = "Estado";
             this.chkEstado.UseVisualStyleBackColor = true;
             // 
@@ -120,7 +120,7 @@
             this.btnAgregar.Location = new System.Drawing.Point(431, 189);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(125, 30);
-            this.btnAgregar.TabIndex = 9;
+            this.btnAgregar.TabIndex = 5;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -141,7 +141,7 @@
             this.mtxtCarnet.Mask = "00-000000";
             this.mtxtCarnet.Name = "mtxtCarnet";
             this.mtxtCarnet.Size = new System.Drawing.Size(148, 23);
-            this.mtxtCarnet.TabIndex = 10;
+            this.mtxtCarnet.TabIndex = 2;
             // 
             // frmAgregar
             // 

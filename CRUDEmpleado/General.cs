@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace CRUDEmpleado
 {
-    static class Reemplazar
+    static class General
     {
         public static int ReemplazarMascara(string dato)
         {
             dato = dato.Replace("-", "");
             return Convert.ToInt32(dato);
         }
+
+
     }
 }

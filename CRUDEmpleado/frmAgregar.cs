@@ -49,7 +49,7 @@ namespace CRUDEmpleado
             Modelo.dsCRUDEmpleadosTableAdapters.EmpleadosTableAdapter ta =
               new Modelo.dsCRUDEmpleadosTableAdapters.EmpleadosTableAdapter();
 
-            ta.InsertEmpleado(txtNombre.Text.Trim(), Reemplazar.ReemplazarMascara(mtxtCarnet.Text.Trim()),
+            ta.InsertEmpleado(txtNombre.Text.Trim(), General.ReemplazarMascara(mtxtCarnet.Text.Trim()),
                 Convert.ToDecimal(txtSalario.Text.Trim()), Convert.ToInt32(txtAñosLaborados.Text.Trim()), chkEstado.Checked);
 
             CargarDatos();

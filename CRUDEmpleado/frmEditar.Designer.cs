@@ -39,54 +39,55 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.mtxtCarnet = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnEditar
             // 
             this.btnEditar.Location = new System.Drawing.Point(431, 189);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(125, 30);
-            this.btnEditar.TabIndex = 20;
+            this.btnEditar.TabIndex = 5;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // chkEstado
             // 
             this.chkEstado.AutoSize = true;
             this.chkEstado.Location = new System.Drawing.Point(110, 129);
-            this.chkEstado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkEstado.Margin = new System.Windows.Forms.Padding(4);
             this.chkEstado.Name = "chkEstado";
             this.chkEstado.Size = new System.Drawing.Size(69, 22);
-            this.chkEstado.TabIndex = 19;
+            this.chkEstado.TabIndex = 4;
             this.chkEstado.Text = "Estado";
             this.chkEstado.UseVisualStyleBackColor = true;
             // 
             // txtAñosLaborados
             // 
             this.txtAñosLaborados.Location = new System.Drawing.Point(398, 34);
-            this.txtAñosLaborados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAñosLaborados.Margin = new System.Windows.Forms.Padding(4);
             this.txtAñosLaborados.Name = "txtAñosLaborados";
             this.txtAñosLaborados.Size = new System.Drawing.Size(148, 23);
-            this.txtAñosLaborados.TabIndex = 15;
+            this.txtAñosLaborados.TabIndex = 1;
             // 
             // txtSalario
             // 
             this.txtSalario.Location = new System.Drawing.Point(398, 83);
-            this.txtSalario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSalario.Margin = new System.Windows.Forms.Padding(4);
             this.txtSalario.Name = "txtSalario";
             this.txtSalario.Size = new System.Drawing.Size(148, 23);
-            this.txtSalario.TabIndex = 16;
+            this.txtSalario.TabIndex = 3;
             // 
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(110, 36);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(148, 23);
-            this.txtNombre.TabIndex = 18;
+            this.txtNombre.TabIndex = 0;
             // 
             // label4
             // 
@@ -136,24 +137,28 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(9, 226);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(547, 205);
-            this.dataGridView1.TabIndex = 10;
+            this.dataGridView1.TabIndex = 6;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // maskedTextBox1
+            // mtxtCarnet
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(110, 81);
-            this.maskedTextBox1.Mask = "00-000000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(148, 23);
-            this.maskedTextBox1.TabIndex = 21;
+            this.mtxtCarnet.Enabled = false;
+            this.mtxtCarnet.Location = new System.Drawing.Point(110, 81);
+            this.mtxtCarnet.Mask = "00-000000";
+            this.mtxtCarnet.Name = "mtxtCarnet";
+            this.mtxtCarnet.Size = new System.Drawing.Size(148, 23);
+            this.mtxtCarnet.TabIndex = 2;
             // 
             // frmEditar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(569, 437);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.mtxtCarnet);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.chkEstado);
             this.Controls.Add(this.txtAñosLaborados);
@@ -167,7 +172,7 @@
             this.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmEditar";
             this.ShowIcon = false;
             this.Text = "frmEditar";
@@ -189,6 +194,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox mtxtCarnet;
     }
 }
