@@ -1,0 +1,14 @@
+C:\Users\joel1\OneDrive\C#\Portafolio\CRUDEmpleado\CRUDEmpleado\bin\Debug\CRUDEmpleado.exe.config
+C:\Users\joel1\OneDrive\C#\Portafolio\CRUDEmpleado\CRUDEmpleado\bin\Debug\CRUDEmpleado.exe
+C:\Users\joel1\OneDrive\C#\Portafolio\CRUDEmpleado\CRUDEmpleado\bin\Debug\CRUDEmpleado.pdb
+C:\Users\joel1\OneDrive\C#\Portafolio\CRUDEmpleado\CRUDEmpleado\obj\Debug\CRUDEmpleado.csprojAssemblyReference.cache
+C:\Users\joel1\OneDrive\C#\Portafolio\CRUDEmpleado\CRUDEmpleado\obj\Debug\CRUDEmpleado.Form1.resources
+C:\Users\joel1\OneDrive\C#\Portafolio\CRUDEmpleado\CRUDEmpleado\obj\Debug\CRUDEmpleado.Properties.Resources.resources
+C:\Users\joel1\OneDrive\C#\Portafolio\CRUDEmpleado\CRUDEmpleado\obj\Debug\CRUDEmpleado.csproj.GenerateResource.cache
+C:\Users\joel1\OneDrive\C#\Portafolio\CRUDEmpleado\CRUDEmpleado\obj\Debug\CRUDEmpleado.csproj.CoreCompileInputs.cache
+C:\Users\joel1\OneDrive\C#\Portafolio\CRUDEmpleado\CRUDEmpleado\obj\Debug\CRUDEmpleado.exe
+C:\Users\joel1\OneDrive\C#\Portafolio\CRUDEmpleado\CRUDEmpleado\obj\Debug\CRUDEmpleado.pdb
+C:\Users\joel1\OneDrive\C#\Portafolio\CRUDEmpleado\CRUDEmpleado\obj\Debug\CRUDEmpleado.frmEditar.resources
+C:\Users\joel1\OneDrive\C#\Portafolio\CRUDEmpleado\CRUDEmpleado\obj\Debug\CRUDEmpleado.frmEliminar.resources
+C:\Users\joel1\OneDrive\C#\Portafolio\CRUDEmpleado\CRUDEmpleado\obj\Debug\CRUDEmpleado.frmReporte.resources
+C:\Users\joel1\OneDrive\C#\Portafolio\CRUDEmpleado\CRUDEmpleado\obj\Debug\CRUDEmpleado.frmAgregar.resources
